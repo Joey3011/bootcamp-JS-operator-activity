@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment and Activity: JS Operators</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-start mt-5">
+        <h3>
+            1.What is the difference between a comparison operator and an assignment operator?
+        </h3>
+        <ul>
+            <li>
+                A comparison operator compares its operands and returns a logical value based on whether the comparison is true. The operands can be numerical, string, logical, or object values
+            </li>
+            <li>
+                Assignment operator is used to assign the result of the expression on the right side of the operator to the variable on the left side
+            </li>
+        </ul>
+        <h3>
+            2.What is a Boolean? What does it represent?
+        </h3>
+        <ul>
+            <li>
+                Boolean data type is a value that can only be either true or false.
+            </li>
+            <li>
+                Boolean value represents a truth value; that is, TRUE or FALSE. A Boolean expression or predicate can result in a value of unknown, which is represented by the null value.
+            </li>
+        </ul>
+        <h3>
+            3.How is the += operator different than + operator?
+        </h3>
+        <ul>
+            <li>
+                The += operator adds the value on its right to the variable or property on its left, and assigns the result to the variable or property on its left
+            </li>
+            <li>
+                This operation adds both the operands on either side of the + operator.
+            </li>
+        </ul>
+        <h2 class="mt-5">
+            Code Part
+        </h2>
+        <ol>
+            <li>
+                Set two variables equal to two different numbers. Use a comparison operator to compare these two variables. Change one of their values by using the +=, -=, *=, or /= operator. Then, compare their values again.
+            </li>
+            <li>
+                Try out the <= and >= operators.
+            </li>
+            <li>
+                Try to use the !== operator.
+            </li>
+        </ol>
+    </div>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="col-sm-4 mb-2">
+            <label class="pe-1 text-danger" for="">Input One</label>
+            <input type="text" class="form-control" placeholder="Enter variable 1" id="var1">
+        </div>
+        <div class="col-sm-4 mb-3">
+            <label class="pe-1 text-danger" for="">Input Two</label>
+            <input type="text" class="form-control" placeholder="Enter variable 1" id="var2">
+        </div>
+        <div class="col mb-2">
+            <input class="form-check-input" type="radio" id="equal" name="operator" value="==">
+            <label class="pe-1 text-danger fw-bold" for="">== Equal to </label>
+
+            <input class="form-check-input" type="radio" id="notEqual" name="operator" value="!=">
+            <label class="pe-1 text-danger fw-bold" for="">!= Not equal </label>
+
+            <input class="form-check-input" type="radio" id="greaterThan" name="operator" value=">">
+            <label class="pe-1 text-danger fw-bold" for=""> ">" Greater than </label>
+
+            <input class="form-check-input" type="radio" id="lessThan" name="operator" value="<">
+            <label class="pe-1 text-danger fw-bold" for=""> "<" Less than </label>
+
+            <input class="form-check-input" type="radio" id="lessThanequal" name="operator" value="<=">
+            <label class="pe-1 text-danger fw-bold" for=""> "<=" Less than equal </label>
+
+            <input class="form-check-input" type="radio" id="lessThanequal" name="operator" value=">=">
+            <label class="pe-1 text-danger fw-bold" for=""> ">=" Greater than equal </label>
+
+            <input class="form-check-input" type="radio" id="lessThanequal" name="operator" value="!==">
+            <label class="pe-1 text-danger fw-bold" for=""> "!==" Strict equality </label>
+
+            <div class="col mb-3 pt-3">
+                <button class="btn btn-sm btn-primary w-100" id="viewOutput">Compare</button>
+            </div>
+        </div>
+        <p>
+            Change one of their values by using the +=, -=, *=, or /= operator. Then, compare their values again.
+        </p>
+        <div class="col-sm-6 mb-2">
+            <label class="pe-1 text-danger fw-bold" for="">+= addition assignment operator</label>
+            <input type="text" class="form-control" placeholder="addition assignment operator" id="num1">
+            <button class="btn btn-sm btn-primary w-50 float-start" id="additionVar1">Change value of variable 1 and compare</button>
+            <button class="btn btn-sm btn-primary w-50 float-end" id="additionVar2">Change value of variable 2 and compare</button>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <label class="pe-1 text-danger fw-bold" for="">-= subtraction assignment operator</label>
+            <input type="text" class="form-control" placeholder="-= subtraction assignment operator" id="num2">
+            <button class="btn btn-sm btn-primary w-50 float-start" id="subtractionVar1">Change value of variable 1 and compare</button>
+            <button class="btn btn-sm btn-primary w-50 float-end" id="subtractionVar2">Change value of variable 2 and compare</button>
+        </div>
+        <div class="col-sm-6 mb-2">
+            <label class="pe-1 text-danger fw-bold" for=""> *= multiplication assignment operator</label>
+            <input type="text" class="form-control" placeholder="multiplication assignment operator" id="num3">
+            <button class="btn btn-sm btn-primary w-50 float-start" id="multiplicationVar1">Change value of variable 1 and compare</button>
+            <button class="btn btn-sm btn-primary w-50 float-end" id="multiplicationVar2">Change value of variable 2 and compare</button>
+        </div>
+        <div class="col-sm-6 mb-5 pb-5">
+            <label class="pe-1 text-danger fw-bold" for="">/= divisor assignment operator</label>
+            <input type="text" class="form-control" placeholder="divisor assignment operator" id="num4">
+            <button class="btn btn-sm btn-primary w-50 float-start" id="divisorVar1">Change value of variable 1 and compare</button>
+            <button class="btn btn-sm btn-primary w-50 float-end" id="divisorVar2">Change value of variable 2 and compare</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
