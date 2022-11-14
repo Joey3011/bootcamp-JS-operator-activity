@@ -129,6 +129,14 @@ const checkResultforVariable1 = (radio) =>{
                         }
                     }else{
                         alert("Input entered is not a number")
+                        addValue[0].checked = false
+                        addValue[1].checked = false
+                        assignmentOperator[0].checked = false
+                        assignmentOperator[1].checked = false
+                        assignmentOperator[2].checked = false
+                        assignmentOperator[3].checked = false
+                        document.getElementById("changeVar1").readOnly = true
+                        changeVar1.value = ""
                     }
                 }
                  
@@ -142,7 +150,7 @@ const checkResultforVariable1 = (radio) =>{
                     assignmentOperator[2].checked = false
                     assignmentOperator[3].checked = false
                     document.getElementById("changeVar2").readOnly = true
-                    changeVar1.value = ""
+                    changeVar2.value = ""
                 }else{
                     if(Number(document.getElementById("changeVar2").value) || Number(document.getElementById("changeVar2").value) == 0){
                         if(radio.value == "+=") {
@@ -156,6 +164,14 @@ const checkResultforVariable1 = (radio) =>{
                         }
                     }else{
                         alert("Input entered is not a number")
+                        addValue[0].checked = false
+                        addValue[1].checked = false
+                        assignmentOperator[0].checked = false
+                        assignmentOperator[1].checked = false
+                        assignmentOperator[2].checked = false
+                        assignmentOperator[3].checked = false
+                        document.getElementById("changeVar2").readOnly = true
+                        changeVar2.value = ""
                     }
                 }
             }
