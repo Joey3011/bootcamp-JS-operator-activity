@@ -10,11 +10,11 @@ const assignmentOperator = document.getElementsByName("assignmentOperator");
 const addValue = document.getElementsByName("addValue");
 //button
 const viewOtput = document.getElementById("viewOutput")
-const changeCompare = document.getElementById("changeCompare");
+const reset = document.getElementById("reset");
 
 
 const letsGetItOn = (var1, var2) => {
-    if(var1.value != '' || var2.value != ''){
+    if(var1.value != '' && var2.value != ''){
         if(Number(var1.value) || Number(var2.value) || Number(var2.value) == 0 || Number(var2.value) == "0"){
             let num1 = Number(var1.value)
             let num2 = Number(var2.value)
@@ -52,6 +52,28 @@ const letsGetItOn = (var1, var2) => {
 
 viewOtput.addEventListener("click", () =>{
     letsGetItOn(var1, var2)
+})
+
+reset.addEventListener('click', () =>{
+    addValue[0].checked = false
+    addValue[1].checked = false
+    assignmentOperator[0].checked = false
+    assignmentOperator[1].checked = false
+    assignmentOperator[2].checked = false
+    assignmentOperator[3].checked = false
+    operator[0].checked = false
+    operator[1].checked = false
+    operator[2].checked = false
+    operator[3].checked = false
+    operator[4].checked = false
+    operator[5].checked = false
+    operator[6].checked = false
+    document.getElementById("var1").value = ""
+    document.getElementById("var2").value = ""
+    document.getElementById("changeVar1").value = ""
+    document.getElementById("changeVar2").value = ""
+    document.getElementById("changeVar1").readOnly = true
+    document.getElementById("changeVar2").readOnly = true
 })
 
 const radioSelectVariable = (radio) => {  
@@ -155,16 +177,9 @@ const checkResultforVariable1 = (radio) =>{
         assignmentOperator[1].checked = false
         assignmentOperator[2].checked = false
         assignmentOperator[3].checked = false
-    }
-    
-    
+    }  
 }
 
 
-addValue[0].checked = false
-addValue[1].checked = false
-assignmentOperator[0].checked = false
-assignmentOperator[1].checked = false
-assignmentOperator[2].checked = false
-assignmentOperator[3].checked = false
+
 
