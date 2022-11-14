@@ -24,7 +24,9 @@ const letsGetItOn = (var1, var2) => {
            }else{
             let num1 = Number(var1.value)
             let num2 = Number(var2.value)
-
+            if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                alert("No operator selected")
+            }
             for (let radio of operator) {
                 if (radio.checked) {
                     if(radio.value == "==") {
@@ -63,6 +65,11 @@ additionVar1.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum1.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
@@ -105,6 +112,11 @@ additionVar2.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum1.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
@@ -145,6 +157,11 @@ subtractionVar1.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum2.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
@@ -185,6 +202,11 @@ subtractionVar2.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum2.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
@@ -225,6 +247,11 @@ multiplicationVar1.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum3.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
@@ -265,6 +292,11 @@ multiplicationVar2.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum3.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
@@ -304,6 +336,11 @@ divisorVar1.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum4.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
@@ -344,6 +381,11 @@ divisorVar2.addEventListener("click", () => {
                 let num1 = Number(var1.value)
                 let num2 = Number(var2.value)
                 let add = Number(varNum4.value)
+
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+                
                 for (const radio of operator) {
                     if (radio.checked) {
                         if(radio.value == "==") {
