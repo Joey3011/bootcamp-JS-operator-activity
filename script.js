@@ -170,7 +170,7 @@ const checkResultforVariable1 = (radio) =>{
         }
 
     }else{
-        alert("input element has no value") 
+        alert("input element for variable has no value") 
         addValue[0].checked = false
         addValue[1].checked = false
         assignmentOperator[0].checked = false
