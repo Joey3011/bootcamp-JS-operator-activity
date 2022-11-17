@@ -13,11 +13,11 @@ const viewOtput = document.getElementById("viewOutput")
 const reset = document.getElementById("reset");
 
 
-const letsGetItOn = (var1, var2) => {
-    if(var1.value != '' && var2.value != ''){
-        if(Number(var1.value) || Number(var2.value) || Number(var1.value) == 0 || Number(var2.value) == 0){
-            let num1 = Number(var1.value)
-            let num2 = Number(var2.value)
+const letsGetItOn = (num1, num2) => {
+    if(num1 != '' && num2 != ''){
+        if(!Number(num1) || !Number(num2)){
+            alert("Input entered is not a number")
+        }else{
             if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
                 alert("No operator selected")
             }
@@ -41,8 +41,6 @@ const letsGetItOn = (var1, var2) => {
                     break;
                 }    
             }
-           }else{
-            alert("Input entered is not a number")
         }
     }else{
         alert("input element for variable has no value")
@@ -51,7 +49,7 @@ const letsGetItOn = (var1, var2) => {
 } 
 
 viewOtput.addEventListener("click", () =>{
-    letsGetItOn(var1, var2)
+    letsGetItOn(var1.value, var2.value)
 })
 
 reset.addEventListener('click', () =>{
