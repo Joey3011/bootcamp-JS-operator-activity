@@ -15,34 +15,34 @@ const reset = document.getElementById("reset");
 
 const letsGetItOn = (var1, var2) => {
     if(var1.value != '' && var2.value != ''){
-        if(Number(var1.value) && Number(var2.value) || Number(var1.value) == 0 && Number(var2.value) == 0){
-            let num1 = Number(var1.value)
-            let num2 = Number(var2.value)
-            if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
-                alert("No operator selected")
-            }
-            for (let radio of operator) {
-                if (radio.checked) {
-                    if(radio.value == "==") {
-                        alert(`Is ${num1} equal to ${num2} = ${num1 == num2}`)
-                    }else if(radio.value == "!="){
-                        alert(`Is ${num1} not equal to ${num2} = ${num1 != num2}`)
-                    }else if(radio.value == "<"){
-                        alert(`Is ${num1} less than ${num2} = ${num1 < num2}`)
-                    }else if(radio.value == ">"){
-                        alert(`Is ${num1} greater than ${num2} = ${num1 > num2}`)
-                    }else if(radio.value == "<="){
-                        alert(`Is ${num1} less than equal ${num2} = ${num1 <= num2}`)
-                    }else if(radio.value == ">="){
-                        alert(`Is ${num1} greater than equal ${num2} = ${num1 >= num2}`)
-                    }else if(radio.value == "!=="){
-                        alert(`Is ${num1} Strictly Not equal to ${num2} = ${num1 !== num2}`)
-                    }
-                    break;
-                }    
-            }
-           }else{
-            alert("Input entered is not a number")
+        if(!Number(var1.value) && Number(!var2.value)){
+                alert("Input entered is not a number")
+        }else{
+                let num1 = Number(var1.value)
+                let num2 = Number(var2.value)
+                if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
+                    alert("No operator selected")
+                }
+                for (let radio of operator) {
+                    if (radio.checked) {
+                        if(radio.value == "==") {
+                            alert(`Is ${num1} equal to ${num2} = ${num1 == num2}`)
+                        }else if(radio.value == "!="){
+                            alert(`Is ${num1} not equal to ${num2} = ${num1 != num2}`)
+                        }else if(radio.value == "<"){
+                            alert(`Is ${num1} less than ${num2} = ${num1 < num2}`)
+                        }else if(radio.value == ">"){
+                            alert(`Is ${num1} greater than ${num2} = ${num1 > num2}`)
+                        }else if(radio.value == "<="){
+                            alert(`Is ${num1} less than equal ${num2} = ${num1 <= num2}`)
+                        }else if(radio.value == ">="){
+                            alert(`Is ${num1} greater than equal ${num2} = ${num1 >= num2}`)
+                        }else if(radio.value == "!=="){
+                            alert(`Is ${num1} Strictly Not equal to ${num2} = ${num1 !== num2}`)
+                        }
+                        break;
+                    }    
+                }
         }
     }else{
         alert("input element for variable has no value")
