@@ -15,9 +15,7 @@ const reset = document.getElementById("reset");
 
 const letsGetItOn = (num1, num2) => {
     if(num1 != '' && num2 != ''){
-        if(!Number(num1) && !Number(num2)){
-            alert("Input entered is not a number")
-        }else{
+        if(!isNaN(num1) && !isNaN(num2)){
             if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
                 alert("No operator selected")
             }
@@ -41,6 +39,8 @@ const letsGetItOn = (num1, num2) => {
                     break;
                 }    
             }
+        }else{
+            alert("Input entered is not a number")
         }
     }else{
         alert("input element for variable has no value")
@@ -94,7 +94,7 @@ const checkResultforVariable1 = (radio) =>{
 
     if(var1.value != "" && var1.value != ""){
 
-        if(Number(var1.value) || Number(var2.value) || Number(var1.value) == 0 || Number(var2.value) == 0){
+        if(!isNaN(var1.value) || !isNaN(var2.value)){
             if(!addValue[0].checked && !addValue[1].checked){
                 alert("No item selected to which variable you want to add/change value")
                 addValue[0].checked = false
