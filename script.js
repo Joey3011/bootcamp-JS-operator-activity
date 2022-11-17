@@ -15,7 +15,7 @@ const reset = document.getElementById("reset");
 
 const letsGetItOn = (var1, var2) => {
     if(var1.value != '' && var2.value != ''){
-        if(Number(var1.value) && Number(var2.value) || Number(var1.value) == 0 && Number(var2.value) == 0){
+        if(Number(var1.value) || Number(var2.value) || Number(var1.value) == 0 || Number(var2.value) == 0){
             let num1 = Number(var1.value)
             let num2 = Number(var2.value)
             if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
