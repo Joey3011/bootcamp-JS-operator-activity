@@ -15,7 +15,7 @@ const reset = document.getElementById("reset");
 
 const letsGetItOn = (num1, num2) => {
     if(num1 != '' && num2 != ''){
-        if(!Number(num1) || !Number(num2)){
+        if(!Number(num1) && !Number(num2)){
             alert("Input entered is not a number")
         }else{
             if(!operator[0].checked && !operator[1].checked && !operator[2].checked && !operator[3].checked && !operator[4].checked && !operator[5].checked && !operator[6].checked){
